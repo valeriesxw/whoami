@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valerie Su — Cloud Support & DevOps</title>
+  <meta name="description" content="Portfolio of Valerie Su, Cloud Support & DevOps professional, formerly in business development and sports technology." />
+  <meta name="theme-color" content="#12161c" />
+
+  <!-- Simple inline favicon (an "VS" monogram) — no separate image file needed -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312161c'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-weight='700' font-size='26' fill='%23e8a33d' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Space Grotesk for headings, IBM Plex Sans for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Our own stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__mark">VS</a>
+
+      <!-- Hamburger button, only visible on small screens -->
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME / HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Singapore</p>
+          <h1 class="hero__name">Valerie Su</h1>
+          <p class="hero__role">Cloud Support &amp; DevOps Professional</p>
+          <p class="hero__pitch">
+            Eight years spent moving projects from idea to delivery across business
+            development and sports technology — now channelled into Linux, cloud
+            infrastructure and automation. I bring the same discipline I used
+            coordinating cross-functional teams to debugging a broken pipeline:
+            stay calm, find the root cause, fix it properly.
+          </p>
+
+          <!-- Career pipeline strip: a small one-time animated reveal, not a scroll gimmick -->
+          <div class="pipeline" aria-hidden="true">
+            <span class="pipeline__node" data-label="Sport & Business"></span>
+            <span class="pipeline__line"></span>
+            <span class="pipeline__node" data-label="Bootcamp 2026"></span>
+            <span class="pipeline__line"></span>
+            <span class="pipeline__node" data-label="Cloud & DevOps"></span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">See my projects</a>
+            <a href="https://github.com/valeriesxw" class="btn btn--ghost" target="_blank" rel="noopener">GitHub profile</a>
+          </div>
+        </div>
+
+        <div class="hero__photo">
+          <img src="images/profile.jpg" alt="Portrait of Valerie Su" width="420" height="420" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ME ============ -->
+    <section class="section" id="about">
+      <div class="section__inner about">
+        <h2 class="section__title">About me</h2>
+        <div class="about__grid">
+          <p class="about__lead">
+            My passion for technology grew at PulseSync, where I worked alongside
+            developers and cross-functional teams on AI-powered applications and
+            smart fitness technology — and realised I wanted to be building the
+            infrastructure, not just coordinating around it.
+          </p>
+          <div class="about__body">
+            <p>
+              That realisation led me to Generation Singapore's Cloud Support &amp;
+              DevOps Bootcamp, an intensive full-time programme covering Linux
+              administration, networking, Bash scripting, Python, Docker,
+              Git and cloud troubleshooting.
+            </p>
+            <p>
+              Before that pivot, I spent over eight years delivering cross-functional
+              projects: coordinating international teams at Paris Saint-Germain APAC,
+              running programmes and marketing at WWTBF (The Cage) in sports
+              technology, and supporting logistics at Decathlon Singapore. That
+              background means I already know how to work with engineers, ask the
+              right questions, document decisions clearly, and keep a project
+              moving — I'm now applying it to cloud and DevOps work.
+            </p>
+            <p>
+              I'm looking for a role where I can keep building hands-on technical
+              skill inside a collaborative engineering team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="section__inner">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills__group">
+          <h3 class="skills__label">DevOps &amp; automation</h3>
+          <ul class="tags">
+            <li class="tag tag--accent">Git &amp; GitHub</li>
+            <li class="tag tag--accent">Docker</li>
+            <li class="tag tag--accent">Terraform</li>
+            <li class="tag tag--accent">CI/CD fundamentals</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__label">Programming &amp; scripting</h3>
+          <ul class="tags">
+            <li class="tag">Python</li>
+            <li class="tag">Bash</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__label">Operating systems</h3>
+          <ul class="tags">
+            <li class="tag">Linux (Ubuntu)</li>
+            <li class="tag">macOS</li>
+            <li class="tag">Windows</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__label">Networking</h3>
+          <ul class="tags">
+            <li class="tag">TCP/IP</li>
+            <li class="tag">DNS</li>
+            <li class="tag">DHCP</li>
+            <li class="tag">HTTP/HTTPS</li>
+            <li class="tag">SSH</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__label">Practices</h3>
+          <ul class="tags">
+            <li class="tag">Agile</li>
+            <li class="tag">SDLC</li>
+            <li class="tag">Technical documentation</li>
+            <li class="tag">Troubleshooting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="section__inner">
+        <h2 class="section__title">Certifications &amp; education</h2>
+        <ul class="creds">
+          <li class="creds__item">
+            <div class="creds__main">
+              <h3>Cloud Support &amp; DevOps Bootcamp</h3>
+              <p>Generation Singapore</p>
+            </div>
+            <span class="creds__year">2026</span>
+          </li>
+          <li class="creds__item">
+            <div class="creds__main">
+              <h3>Bachelor of Business, Sports &amp; Event Management</h3>
+              <p>James Cook University Singapore</p>
+            </div>
+            <span class="creds__year"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK EXPERIENCE ============ -->
+    <!-- This is a real chronological sequence, so a timeline layout is used deliberately here -->
+    <section class="section section--alt" id="experience">
+      <div class="section__inner">
+        <h2 class="section__title">Work experience</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__date">Sep 2023 – May 2026</div>
+            <div class="timeline__content">
+              <h3>Business Development / Program Development Executive</h3>
+              <p class="timeline__org">PulseSync Pte Ltd</p>
+              <ul>
+                <li>Collaborated with software developers, product teams and business stakeholders to deliver technology-driven solutions.</li>
+                <li>Supported the implementation of AI-powered applications, smart fitness technologies and digital platforms.</li>
+                <li>Worked with technical teams to gather requirements, troubleshoot implementation issues and improve system performance.</li>
+                <li>Coordinated projects involving software, hardware, IoT devices and cloud-connected technologies.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__date">May 2019 – May 2023</div>
+            <div class="timeline__content">
+              <h3>Programme &amp; Marketing Manager</h3>
+              <p class="timeline__org">WWTBF (The Cage)</p>
+              <ul>
+                <li>Led digital initiatives to improve customer engagement and operational efficiency.</li>
+                <li>Managed cross-functional projects and stakeholder communications.</li>
+                <li>Analysed business requirements and recommended process improvements.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__date">Nov 2018 – Apr 2019</div>
+            <div class="timeline__content">
+              <h3>International Coordination Assistant</h3>
+              <p class="timeline__org">Paris Saint-Germain APAC</p>
+              <ul>
+                <li>Prepared reports and market analysis for APAC stakeholders.</li>
+                <li>Coordinated communication across international teams.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__date">Feb 2016 – May 2016</div>
+            <div class="timeline__content">
+              <h3>Logistics Officer</h3>
+              <p class="timeline__org">Decathlon Singapore</p>
+              <ul>
+                <li>Supported logistics documentation and e-commerce operations.</li>
+                <li>Worked with cross-functional teams to improve operational efficiency.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section__inner">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__intro">
+          Hands-on work from the Cloud Support &amp; DevOps Bootcamp, plus an
+          independent project applying the same skills to sports and fitness.
+        </p>
+
+        <div class="projects__grid">
+
+          <!-- Real project #1: from resume "Technical Projects" -->
+          <article class="project-card">
+            <h3>Automated Network Scanning</h3>
+            <p>
+              Bash scripts that automate Nmap network scans, with recurring scans
+              scheduled through Cron for repeatable, hands-off monitoring.
+            </p>
+            <ul class="project-card__lang">
+              <li>Bash</li>
+              <li>Nmap</li>
+              <li>Cron</li>
+            </ul>
+            <div class="project-card__links">
+              <!-- TODO: replace with your real repository URL once this is pushed to GitHub -->
+              <span class="project-card__pending">Repository link coming soon</span>
+            </div>
+          </article>
+
+          <!-- Real project #2: browser-based fitness assessment tool, live on GitHub Pages -->
+          <article class="project-card">
+            <h3>Sit-to-Stand Lab</h3>
+            <p>
+              A browser-based 30-second chair stand test that counts repetitions
+              in real time using on-device pose detection — the camera feed never
+              leaves the browser, so nothing is uploaded or recorded.
+            </p>
+            <ul class="project-card__lang">
+              <li>JavaScript</li>
+              <li>MediaPipe Pose Landmarker</li>
+              <li>Computer vision</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://valeriesxw.github.io/sit-to-stand-tracker/" target="_blank" rel="noopener">Live demo</a>
+              <a href="https://github.com/valeriesxw/sit-to-stand-tracker" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="section__inner contact">
+        <h2 class="section__title">Contact me</h2>
+        <p class="section__intro">
+          Open to Cloud Support and DevOps opportunities in Singapore and remote-friendly teams.
+        </p>
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:valeriesu@gmx.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">valeriesu@gmx.com</span>
+          </a>
+          <a class="contact__card" href="https://github.com/valeriesxw" target="_blank" rel="noopener">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/valeriesxw</span>
+          </a>
+          <!-- TODO: replace with your real LinkedIn URL, or delete this card if you don't have one yet -->
+          <a class="contact__card" href="#" onclick="return false;">
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">Add your LinkedIn URL here</span>
+          </a>
+          <div class="contact__card contact__card--static">
+            <span class="contact__label">Location</span>
+            <span class="contact__value">Singapore</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Valerie Su. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
